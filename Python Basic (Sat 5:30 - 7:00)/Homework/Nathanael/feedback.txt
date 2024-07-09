@@ -1,7 +1,14 @@
-import datetime
+from sys import argv
 
-now = datetime.datetime.now()
+script_filename = argv
+print "Who are you?"
+name = raw_input()
 
-print("Current date and time : ")
+print "What file are you looking for today?"
+file = raw_input()
 
-print(now.strftime("%Y-%m-%d %H:%M:%S"))
+print (file)
+
+print "Ok then, here's the file you wanted." 
+
+print "Would you like to delete the contents? Yes or No?"
