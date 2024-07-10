@@ -1,14 +1,21 @@
-from sys import argv
-
-script_filename = argv
-print "Who are you?"
-name = raw_input()
-
-print "What file are you looking for today?"
-file = raw_input()
-
-print (file)
-
-print "Ok then, here's the file you wanted." 
-
-print "Would you like to delete the contents? Yes or No?"
+while True:
+    hrs = input ("Enter no.of hrs worked: ")
+    rate = input ("Enter the rate per hour: ")
+    try:
+        hrs = int(hrs)
+        rate = int(rate)
+    except :
+        print ('Non numeric data found.')
+        continue    
+    if hrs > 40:
+        overtimeRate = 1.5 * rate
+        overtime = (hrs-40) * overtime
+        hrs = 40
+        regular=hrs*rate
+        total_pay=regular+overtime
+        print(total_pay)
+    else:
+        overtime = 0
+        total_pay=hrs*rate
+        print(total_pay)
+    quit()
