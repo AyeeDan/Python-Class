@@ -3,8 +3,6 @@ print ("the date and time NOW!!!! is...:", datetime.now())
 print ("apparently import datetime doesn't work :(")
 print ("everything is imported now")
 
-import random
-
 totally_random_number_real = random.randint (1,10)
 print ("I put random.randomint (1,10), ran it, it gave me a syntax error, but the syntax error literally gave me the answer. It said, 'did you mean 'randint?' randint works.")
 print ("")
