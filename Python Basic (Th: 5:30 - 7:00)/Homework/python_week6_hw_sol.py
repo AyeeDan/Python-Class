@@ -5,6 +5,7 @@ full_name = "Lily Hou"
 #   option 1
 greeting = "Hello, my name is " + full_name
 print(greeting) # optional code
+
 #   option 2
 greeting = "Hello, my name is "
 message = greeting + full_name
