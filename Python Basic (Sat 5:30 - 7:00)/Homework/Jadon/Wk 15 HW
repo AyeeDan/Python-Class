@@ -1,0 +1,27 @@
+def divide (x, y):
+  if y == 0: 
+    raise ValueError("Division by zero is no allowed :/")
+  return x/y
+    
+n = divide(678, 93)
+  
+print (n)
+
+try:  
+  file=open ("example.txt:", "s")
+  content=file.read()
+  
+except (FileNotFoundError, PermissionError):
+  print("⚠️ File Not Found ⚠️")
+
+finally: 
+  print ("The File is now loaded for you")
+  
+def divide (x, y):
+  if y == 0: 
+    raise ValueError("Division by zero is no allowed :/")
+  return x/y
+    
+n = divide(678, 0)
+  
+print (n)
