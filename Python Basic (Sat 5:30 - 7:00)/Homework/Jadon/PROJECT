@@ -1,0 +1,43 @@
+#im doing 350x350, cuz the screen wont fit 400x400
+import turtle
+screen=turtle.Screen()
+t=turtle.Turtle()
+t.forward(175)
+t.right(90)
+t.forward(175)
+t.right(90)
+t.forward(350)
+t.right(90)
+t.forward(350)
+t.right(90)
+t.forward(350)
+t.right(90)
+t.forward(175)
+t.right(90)
+t.forward(350)
+t.right(180)
+t.forward(175)
+t.right(90)
+t.forward(175)
+t.right(180)
+t.forward(350)
+
+x=85
+y=-108
+turtle.goto(x,y)
+def check_guess (x, y, user_x, user_y):
+  distance=((x-user_x)) ** 2+(y-user_y)**2**0.5
+  return distance < 20
+number=int(input("What is your x-axis guess? (please enter a number"))
+  if number <= 80 and >=90: 
+if True:
+  print ("You've Won the first 1/2 of the round, please go onto the next half!")
+if False:
+  print ("Please Try Again.")
+  
+number=int(input("What is your y-axis guess? (please enter a number"))
+if number >=-118 and <=-98:
+  if True:
+    print ("You've Won!")
+  if False:
+    print ("Sorry, you've lost, but you did great on the first round.")
