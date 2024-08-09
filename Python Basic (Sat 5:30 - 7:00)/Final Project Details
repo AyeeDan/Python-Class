@@ -1,0 +1,22 @@
+Hello Hello Python Students!
+
+Isaiah here. For the Final Project I this is just a reminder of what I am expecting you all to include in your final project. 
+
+It is a Hide and Seek Game which has to include that is described by the following: 
+- By using the Turtle linrary, you are going to place the turtle cursor in a random spot in the provided Turtle screen 
+- The program will ask the user to guess where the cursor's x and y coordinate is in the screen
+- Depending on how close they are to that point, the program will return back whether or not they had won or not
+- Hint: 
+  - Use 2 functions:
+    - One function for choosing a random spot in the screen
+    - one function that will check if the point that you provided is close enough to the random point that was given 
+
+- Make it so that if the guess is 30-point radius (within a circle of a  30 point radius) then it will be considered correct
+  - for this please use this function:
+ 
+
+def check_guess(x, y, user_x, user_y):
+    distance = ((x - user_x) ** 2 + (y - user_y) ** 2) ** 0.5
+    return distance < 20
+
+If you have any questions please feel free to send a message to my email: isaiahpag123@gmail.com
